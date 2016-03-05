@@ -2,18 +2,17 @@
   <div class="col-lg-8">
     <div class="input-group">
       <div class="input-group-btn">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{selectedColumn.disp}} <span class="caret"></span></button>
         <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Separated link</a></li>
+          <li  *ngFor="#column of searchColumns"><a href="#" (click)="onColumn(column)">{{column.disp}}</a></li>
         </ul>
       </div><!-- /btn-group -->
-      <input type="text" class="form-control" placeholder="Search for..." aria-label="...">
+      <input type="text"
+                class = "form-control"
+                placeholder="Search for..." 
+                [(ngModel)]="filter"/>
        <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
+        <button class="btn btn-default" type="button" (click)="filterChanged()">Go!</button>
 
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{langSelected}}<span class="caret"></span></button>
         <ul class="dropdown-menu">
@@ -27,17 +26,17 @@
 <div class="table-responsive">
   <table class="table">
     <tr>
-        <th>Full Name</th>
-        <th>Address</th>
-        <th>Address Line 2</th>
-        <th>City</th>
-        <th>Province</th>
-        <th>Postal Code</th>
+        <th (click)="sortBy('FULL_NAME')">Full Name</th>
+        <th (click)="sortBy('STREET_NAME')">Address</th>
+        <th (click)="sortBy('STREET_NAME2')">Address Line 2</th>
+        <th (click)="sortBy('CITY')">City</th>
+        <th (click)="sortBy('PROVINCE_OR_STATE_E')">Province</th>
+        <th (click)="sortBy('POSTAL_CODE')">Postal Code</th>
         <th>Country</th>
-        <th>Owner Type</th>
+        <th (click)="sortBy('TYPE_OF_OWNER_E')">Owner Type</th>
         <th>Aircraft Details</th>
     </tr>
-    <tr *ngFor="#plane of privateAirplane; #i = index">
+    <tr *ngFor="#plane of filteredAirplane; #i = index">
         <td>{{plane.FULL_NAME}}</td>
         <td>{{plane.STREET_NAME}}</td>
         <td>{{plane.STREET_NAME2 }}</td>

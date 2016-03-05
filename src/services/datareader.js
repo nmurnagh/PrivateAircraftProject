@@ -32,7 +32,7 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Observable', 'rxjs/add/
                     this.baseUrl = '/src';
                 }
                 DataReader.prototype.getData = function () {
-                    return this.http.get(this.baseUrl + '/AirplaneDataCombined.json')
+                    return this.http.get(this.baseUrl + '/DebugData.json')
                         .map(function (res) { return res.json(); }).catch(this.handleError);
                 };
                 DataReader.prototype.handleError = function (error) {

@@ -12,7 +12,7 @@ export class DataReader{
     constructor(private http: Http) { }
     
     getData() {
-        return this.http.get(this.baseUrl + '/AirplaneDataCombined.json')
+        return this.http.get(this.baseUrl + '/DebugData.json')
         .map((res: Response) => res.json()).catch(this.handleError);
     }
     
