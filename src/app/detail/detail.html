@@ -1,16 +1,14 @@
 <div class="container-fluid custom-modal-container">
-    <div class="row custom-modal-header">
-        <div class="col-sm-12">
-            <h1>A Custom modal design</h1>
+    <div class="row custom-modal-header" style="vertical-align: middle;">
+        <div class="col-md-6">
+            <h1>{{context.data.FULL_NAME}}</h1></div>
+        <div class="col-md-6">
+            <button class="btn btn-default pull-right" type="button" (click)="close()">Close</button>
         </div>
     </div>
     <div class="row" [ngClass]="{'myclass' : shouldUseMyClass}">
-        <div class="table-responsive">
+        <div class="table-responsive" style="overflow-y: auto;max-height: 600px">
             <table class="table">
-                <tr>
-                    <td>Owner Name</td>
-                    <td>{{context.data.FULL_NAME}}</td>
-                </tr>
                 <tr>
                     <td>Activity Sub-type</td>
                     <td>{{context.data.REGISTRATION_SUB_TYPE_E}}</td>
@@ -126,5 +124,4 @@
             </table>
         </div>
     </div>
-    <button class="btn btn-default" type="button" (click)="close()">Close</button>
 </div>
