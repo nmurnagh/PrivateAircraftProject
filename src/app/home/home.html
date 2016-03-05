@@ -15,6 +15,30 @@
   </ul>
 </div>
 
-<li *ngFor="#plane of privateAirplane; #i = index">
-    {{plane.FULL_NAME}}
-</li>
+<div class="table-responsive">
+  <table class="table">
+    <tr>
+        <th>Full Name</th>
+        <th>Address</th>
+        <th>Address Line 2</th>
+        <th>City</th>
+        <th>Province</th>
+        <th>Postal Code</th>
+        <th>Country</th>
+        <th>Owner Type</th>
+        <th>Aircraft Details</th>
+    </tr>
+    <tr *ngFor="#plane of privateAirplane; #i = index">
+        <td>{{plane.FULL_NAME}}</td>
+        <td>{{plane.STREET_NAME}}</td>
+        <td>{{plane.STREET_NAME2 }}</td>
+        <td>{{plane.CITY}}</td>
+        <td>{{plane.PROVINCE_OR_STATE_E}}</td>
+        <td>{{plane.POSTAL_CODE}}</td>
+        <td>{{plane.COUNTRY_E}}</td>
+        <td>{{plane.TYPE_OF_OWNER_E}}</td>
+        <td>Details</td>        
+    </tr>
+  </table>
+</div>
+
