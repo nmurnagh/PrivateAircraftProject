@@ -19,6 +19,7 @@ export /**
     searchColumns: Array<any>;
     selectedColumn: {disp: string,key:string};
     filter: string;
+    sorting: string;
 
     constructor(private dataReader: DataReader) {
         this.languages = [];
@@ -31,6 +32,7 @@ export /**
         this.searchColumns.push({disp: "Province", key: "PROVINCE_OR_STATE_E"});
         this.searchColumns.push({disp: "Owner Type", key: "TYPE_OF_OWNER_E"});
         this.selectedColumn = this.searchColumns[0];
+        this.sorting = "none";
     }
 
     onLanguage(lang: string) {
@@ -66,5 +68,32 @@ export /**
         else {
             this.filteredAirplane = this.privateAirplane;
         }
+    }
+    
+    sortBy(column: string) {
+        if (this.sorting === "none" || this.sorting === "d") {
+            this.sorting = "a";
+            this.filteredAirplane.sort((a: any, b: any) => {
+            if (a[column] < b[column]) {
+                return -1;
+            } else if (a[column] > b[column]) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }); 
+        } else {
+            this.sorting = "d";
+            this.filteredAirplane.sort((a: any, b: any) => {
+            if (a[column] > b[column]) {
+                return -1;
+            } else if (a[column] < b[column]) {
+                return 1;
+            } else {
+                return 0;
+            }
+        });
+        }
+        return this.filteredAirplane
     }
 }
