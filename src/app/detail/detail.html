@@ -1,0 +1,13 @@
+        <div class="container-fluid custom-modal-container">
+            <div class="row custom-modal-header">
+                <div class="col-sm-12">
+                    <h1>A Custom modal design</h1>
+                </div>
+            </div>
+            <div class="row" [ngClass]="{'myclass' : shouldUseMyClass}">
+                <div class="col-xs-12">
+                    <div>{{context.data.FULL_NAME}}</div>    
+                </div>
+            </div>
+             <button class="btn btn-default" type="button" (click)="close()" >Close</button>
+        </div>
