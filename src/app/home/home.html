@@ -1,19 +1,28 @@
+<div class="row">
+  <div class="col-lg-8">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <input type="text" class="form-control" placeholder="Search for..." aria-label="...">
+       <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
 
-<input type="text" class="form-control" placeholder="Search anything here" aria-describedby="basic-addon1">
-<br>
-<div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Dropdown
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{langSelected}}<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li  *ngFor="#lang of languages"><a href="#" (click)="onLanguage(lang)">{{lang}}</a></li>
+        </ul>
+      </span><!-- /btn-group -->       
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
 
 <div class="table-responsive">
   <table class="table">

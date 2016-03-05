@@ -11,10 +11,18 @@ export /**
  */
 class Home {
     privateAirplane: Array<any>
+    langSelected: string;
+    languages: Array<string>;
     
     constructor(private dataReader: DataReader) {
-        
-      
+        this.languages = [];
+        this.languages.push("English");
+        this.languages.push("French");
+        this.langSelected = this.languages[0];                 
+    }
+    
+    onLanguage(lang: string){
+       this.langSelected = lang;
     }
     
     ngOnInit() {
