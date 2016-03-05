@@ -26,14 +26,14 @@
 <div class="table-responsive">
   <table class="table">
     <tr>
-        <th (click)="sortBy('FULL_NAME')">Full Name</th>
-        <th (click)="sortBy('STREET_NAME')">Address</th>
-        <th (click)="sortBy('STREET_NAME2')">Address Line 2</th>
-        <th (click)="sortBy('CITY')">City</th>
-        <th (click)="sortBy('PROVINCE_OR_STATE_E')">Province</th>
-        <th (click)="sortBy('POSTAL_CODE')">Postal Code</th>
+        <th><a href="#" (click)="sortBy('FULL_NAME')"> Full Name </a></th>
+        <th><a href="#" (click)="sortBy('STREET_NAME')"> Address </a></th>
+        <th><a href="#" (click)="sortBy('STREET_NAME2')"> Address Line 2 </a></th>
+        <th><a href="#" (click)="sortBy('CITY')"> City </a></th>
+        <th><a href="#" (click)="sortBy('PROVINCE_OR_STATE_E')"> Province </a></th>
+        <th><a href="#" (click)="sortBy('POSTAL_CODE')">Postal Code</a></th>
         <th>Country</th>
-        <th (click)="sortBy('TYPE_OF_OWNER_E')">Owner Type</th>
+        <th><a href="#" (click)="sortBy('TYPE_OF_OWNER_E')">Owner Type</a></th>
         <th>Aircraft Details</th>
     </tr>
     <tr *ngFor="#plane of filteredAirplane; #i = index">
