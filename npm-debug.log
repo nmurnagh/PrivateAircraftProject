@@ -1,0 +1,281 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'angular2-modal',
+1 verbose cli   '--save' ]
+2 info using npm@2.14.12
+3 info using node@v4.3.2
+4 verbose install initial load of C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\package.json
+5 warn package.json privateaircraft@1.0.0 No repository field.
+6 verbose installManyTop reading scoped package data from C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\angular2\package.json
+7 verbose installManyTop reading scoped package data from C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\concurrently\package.json
+8 verbose installManyTop reading scoped package data from C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\es6-promise\package.json
+9 verbose installManyTop reading scoped package data from C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\es6-shim\package.json
+10 verbose installManyTop reading scoped package data from C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\live-server\package.json
+11 verbose installManyTop reading scoped package data from C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\reflect-metadata\package.json
+12 verbose installManyTop reading scoped package data from C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\rxjs\package.json
+13 verbose installManyTop reading scoped package data from C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\systemjs\package.json
+14 verbose installManyTop reading scoped package data from C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\typescript\package.json
+15 verbose installManyTop reading scoped package data from C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\typings\package.json
+16 verbose installManyTop reading scoped package data from C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\zone.js\package.json
+17 verbose readDependencies loading dependencies from C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\package.json
+18 silly cache add args [ 'angular2-modal', null ]
+19 verbose cache add spec angular2-modal
+20 silly cache add parsed spec Result {
+20 silly cache add   raw: 'angular2-modal',
+20 silly cache add   scope: null,
+20 silly cache add   name: 'angular2-modal',
+20 silly cache add   rawSpec: '',
+20 silly cache add   spec: 'latest',
+20 silly cache add   type: 'tag' }
+21 silly addNamed angular2-modal@latest
+22 verbose addNamed "latest" is being treated as a dist-tag for angular2-modal
+23 info addNameTag [ 'angular2-modal', 'latest' ]
+24 silly mapToRegistry name angular2-modal
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry uri https://registry.npmjs.org/angular2-modal
+28 verbose addNameTag registry:https://registry.npmjs.org/angular2-modal not in flight; fetching
+29 verbose request uri https://registry.npmjs.org/angular2-modal
+30 verbose request no auth needed
+31 info attempt registry request try #1 at 4:13:37 PM
+32 verbose request id 4b5004b1cac5ec81
+33 http request GET https://registry.npmjs.org/angular2-modal
+34 http 200 https://registry.npmjs.org/angular2-modal
+35 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+35 verbose headers   etag: '"39PIBSU0JI5UN7H29PKYGRVVV"',
+35 verbose headers   'content-type': 'application/json',
+35 verbose headers   'cache-control': 'max-age=300',
+35 verbose headers   'content-length': '10092',
+35 verbose headers   'accept-ranges': 'bytes',
+35 verbose headers   date: 'Sat, 05 Mar 2016 20:13:49 GMT',
+35 verbose headers   via: '1.1 varnish',
+35 verbose headers   age: '0',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'x-served-by': 'cache-ord1746-ORD',
+35 verbose headers   'x-cache': 'MISS',
+35 verbose headers   'x-cache-hits': '0',
+35 verbose headers   'x-timer': 'S1457208828.891389,VS0,VE154',
+35 verbose headers   vary: 'Accept' }
+36 silly get cb [ 200,
+36 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+36 silly get     etag: '"39PIBSU0JI5UN7H29PKYGRVVV"',
+36 silly get     'content-type': 'application/json',
+36 silly get     'cache-control': 'max-age=300',
+36 silly get     'content-length': '10092',
+36 silly get     'accept-ranges': 'bytes',
+36 silly get     date: 'Sat, 05 Mar 2016 20:13:49 GMT',
+36 silly get     via: '1.1 varnish',
+36 silly get     age: '0',
+36 silly get     connection: 'keep-alive',
+36 silly get     'x-served-by': 'cache-ord1746-ORD',
+36 silly get     'x-cache': 'MISS',
+36 silly get     'x-cache-hits': '0',
+36 silly get     'x-timer': 'S1457208828.891389,VS0,VE154',
+36 silly get     vary: 'Accept' } ]
+37 verbose get saving angular2-modal to C:\Users\Nate\AppData\Roaming\npm-cache\registry.npmjs.org\angular2-modal\.cache.json
+38 silly addNameTag next cb for angular2-modal with tag latest
+39 silly addNamed angular2-modal@0.0.4
+40 verbose addNamed "0.0.4" is a plain semver version for angular2-modal
+41 silly mapToRegistry name angular2-modal
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/angular2-modal
+45 verbose addRemoteTarball https://registry.npmjs.org/angular2-modal/-/angular2-modal-0.0.4.tgz not in flight; adding
+46 verbose addRemoteTarball [ 'https://registry.npmjs.org/angular2-modal/-/angular2-modal-0.0.4.tgz',
+46 verbose addRemoteTarball   '8f3399be14ac8dc4fabefe877db1c2369ba8c694' ]
+47 info retry fetch attempt 1 at 4:13:38 PM
+48 info attempt registry request try #1 at 4:13:38 PM
+49 http fetch GET https://registry.npmjs.org/angular2-modal/-/angular2-modal-0.0.4.tgz
+50 http fetch 200 https://registry.npmjs.org/angular2-modal/-/angular2-modal-0.0.4.tgz
+51 silly fetchAndShaCheck shasum 8f3399be14ac8dc4fabefe877db1c2369ba8c694
+52 verbose addTmpTarball C:\Users\Nate\AppData\Local\Temp\npm-13304-651832b6\registry.npmjs.org\angular2-modal\-\angular2-modal-0.0.4.tgz not in flight; adding
+53 verbose addTmpTarball already have metadata; skipping unpack for angular2-modal@0.0.4
+54 silly cache afterAdd angular2-modal@0.0.4
+55 verbose afterAdd C:\Users\Nate\AppData\Roaming\npm-cache\angular2-modal\0.0.4\package\package.json not in flight; writing
+56 verbose afterAdd C:\Users\Nate\AppData\Roaming\npm-cache\angular2-modal\0.0.4\package\package.json written
+57 silly install resolved [ { name: 'angular2-modal',
+57 silly install resolved     description: 'Angular2 Modal (dialog) window bootstrap style.',
+57 silly install resolved     version: '0.0.4',
+57 silly install resolved     repository:
+57 silly install resolved      { type: 'git',
+57 silly install resolved        url: 'git+https://github.com/shlomiassaf/angular2-modal.git' },
+57 silly install resolved     keywords: [ 'angular', 'angular2', 'bootstrap', 'modal' ],
+57 silly install resolved     author: { name: 'Shlomi Assaf' },
+57 silly install resolved     license: 'MIT',
+57 silly install resolved     main: 'dist/angular2-modal.js',
+57 silly install resolved     typings: './dist/angular2-modal.d.ts',
+57 silly install resolved     homepage: 'https://github.com/shlomiassaf/angular2-modal',
+57 silly install resolved     bugs: { url: 'https://github.com/shlomiassaf/angular2-modal/issues' },
+57 silly install resolved     scripts: { prepublish: 'tsc --project publish' },
+57 silly install resolved     devDependencies:
+57 silly install resolved      { angular2: '2.0.0-beta.8',
+57 silly install resolved        'zone.js': '^0.5.15',
+57 silly install resolved        bootstrap: '^3.3.6',
+57 silly install resolved        'css-loader': '^0.23.0',
+57 silly install resolved        del: '^2.2.0',
+57 silly install resolved        'exports-loader': '0.6.2',
+57 silly install resolved        'expose-loader': '^0.7.1',
+57 silly install resolved        'file-loader': '^0.8.4',
+57 silly install resolved        gulp: '^3.9.0',
+57 silly install resolved        'gulp-shell': '^0.5.1',
+57 silly install resolved        'imports-loader': '^0.6.4',
+57 silly install resolved        'json-loader': '^0.5.3',
+57 silly install resolved        'raw-loader': '0.5.1',
+57 silly install resolved        'style-loader': '^0.13.0',
+57 silly install resolved        'ts-loader': '^0.8.1',
+57 silly install resolved        'tsconfig-lint': '^0.6.0',
+57 silly install resolved        tslint: '^3.5.0 ',
+57 silly install resolved        'tslint-loader': '^2.1.1',
+57 silly install resolved        typescript: '^1.8.7',
+57 silly install resolved        typings: '^0.3.1',
+57 silly install resolved        'url-loader': '^0.5.6',
+57 silly install resolved        webpack: '^1.12.9',
+57 silly install resolved        'webpack-dev-server': '^1.12.1' },
+57 silly install resolved     gitHead: '527db1ce1ca50e9aee29f1861bfccbf63cc558a0',
+57 silly install resolved     _id: 'angular2-modal@0.0.4',
+57 silly install resolved     _shasum: '8f3399be14ac8dc4fabefe877db1c2369ba8c694',
+57 silly install resolved     _from: 'angular2-modal@latest',
+57 silly install resolved     _npmVersion: '2.14.12',
+57 silly install resolved     _nodeVersion: '4.2.4',
+57 silly install resolved     _npmUser: { name: 'shlomiassaf', email: 'shlomiasaf@gmail.com' },
+57 silly install resolved     maintainers: [ [Object] ],
+57 silly install resolved     dist:
+57 silly install resolved      { shasum: '8f3399be14ac8dc4fabefe877db1c2369ba8c694',
+57 silly install resolved        tarball: 'http://registry.npmjs.org/angular2-modal/-/angular2-modal-0.0.4.tgz' },
+57 silly install resolved     _npmOperationalInternal:
+57 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+57 silly install resolved        tmp: 'tmp/angular2-modal-0.0.4.tgz_1457205571346_0.2603480371180922' },
+57 silly install resolved     directories: {},
+57 silly install resolved     _resolved: 'https://registry.npmjs.org/angular2-modal/-/angular2-modal-0.0.4.tgz' } ]
+58 info install angular2-modal@0.0.4 into C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject
+59 info installOne angular2-modal@0.0.4
+60 verbose installOne of angular2-modal to C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject not in flight; installing
+61 verbose lock using C:\Users\Nate\AppData\Roaming\npm-cache\_locks\angular2-modal-a0b300389e5da269.lock for C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\angular2-modal
+62 silly install write writing angular2-modal 0.0.4 to C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\angular2-modal
+63 verbose unbuild node_modules\angular2-modal
+64 silly gentlyRm C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\angular2-modal is being purged from base C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject
+65 verbose gentlyRm don't care about contents; nuking C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\angular2-modal
+66 verbose tar unpack C:\Users\Nate\AppData\Roaming\npm-cache\angular2-modal\0.0.4\package.tgz
+67 verbose tar unpacking to C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\angular2-modal
+68 silly gentlyRm C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\angular2-modal is being purged
+69 verbose gentlyRm don't care about contents; nuking C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\angular2-modal
+70 silly gunzTarPerm modes [ '777', '666' ]
+71 silly gunzTarPerm extractEntry package.json
+72 silly gunzTarPerm extractEntry .npmignore
+73 silly gunzTarPerm extractEntry README.md
+74 silly gunzTarPerm extractEntry webpack.config.js
+75 silly gunzTarPerm extractEntry gulpfile.js
+76 silly gunzTarPerm extractEntry webpack.config.test.js
+77 silly gunzTarPerm extractEntry tsconfig.json
+78 silly gunzTarPerm extractEntry dist/angular2-modal.js
+79 silly gunzTarPerm extractEntry dist/angular2-modal.d.ts
+80 silly gunzTarPerm extractEntry dist/angular2-modal.js.map
+81 silly gunzTarPerm extractEntry dist/commonModals/okOnlyModal.js
+82 silly gunzTarPerm extractEntry dist/commonModals/yesNoModal.js
+83 silly gunzTarPerm extractEntry dist/commonModals/okOnlyModal.d.ts
+84 silly gunzTarPerm extractEntry dist/commonModals/okOnlyModal.js.map
+85 silly gunzTarPerm extractEntry dist/commonModals/yesNoModal.d.ts
+86 silly gunzTarPerm extractEntry dist/commonModals/yesNoModal.js.map
+87 silly gunzTarPerm extractEntry dist/components/bootstrapModalContainer.js
+88 silly gunzTarPerm extractEntry dist/components/modalBackdrop.js
+89 silly gunzTarPerm extractEntry dist/components/bootstrapModalContainer.d.ts
+90 silly gunzTarPerm extractEntry dist/components/bootstrapModalContainer.js.map
+91 silly gunzTarPerm extractEntry dist/components/modalBackdrop.d.ts
+92 silly gunzTarPerm extractEntry dist/components/modalBackdrop.js.map
+93 silly gunzTarPerm extractEntry dist/models/ICustomModal.js
+94 silly gunzTarPerm extractEntry dist/models/ModalConfig.js
+95 silly gunzTarPerm extractEntry dist/models/ModalDialogInstance.js
+96 silly gunzTarPerm extractEntry dist/models/ICustomModal.d.ts
+97 silly gunzTarPerm extractEntry dist/models/ICustomModal.js.map
+98 silly gunzTarPerm extractEntry dist/models/ModalConfig.d.ts
+99 silly gunzTarPerm extractEntry dist/models/ModalConfig.js.map
+100 silly gunzTarPerm extractEntry dist/models/ModalDialogInstance.d.ts
+101 silly gunzTarPerm extractEntry dist/models/ModalDialogInstance.js.map
+102 silly gunzTarPerm extractEntry dist/providers/Modal.js
+103 silly gunzTarPerm extractEntry dist/providers/Modal.d.ts
+104 silly gunzTarPerm extractEntry dist/providers/Modal.js.map
+105 silly gunzTarPerm extractEntry build_tools/gulpfile.js
+106 silly gunzTarPerm extractEntry index.html
+107 silly gunzTarPerm extractEntry angular2-modal.ts
+108 silly gunzTarPerm extractEntry src/components/angular2-modal/angular2-modal.ts
+109 silly gunzTarPerm extractEntry src/components/angular2-modal/commonModals/okOnlyModal.ts
+110 silly gunzTarPerm extractEntry src/components/angular2-modal/commonModals/yesNoModal.ts
+111 silly gunzTarPerm extractEntry src/components/angular2-modal/components/bootstrapModalContainer.ts
+112 silly gunzTarPerm extractEntry src/components/angular2-modal/components/modalBackdrop.ts
+113 silly gunzTarPerm extractEntry src/components/angular2-modal/index.ts
+114 silly gunzTarPerm extractEntry src/components/angular2-modal/models/ICustomModal.ts
+115 silly gunzTarPerm extractEntry src/components/angular2-modal/models/ModalConfig.ts
+116 silly gunzTarPerm extractEntry src/components/angular2-modal/models/ModalDialogInstance.ts
+117 silly gunzTarPerm extractEntry src/components/angular2-modal/providers/Modal.ts
+118 silly gunzTarPerm extractEntry docs/assets/css/main.css
+119 silly gunzTarPerm extractEntry docs/assets/css/main.css.map
+120 silly gunzTarPerm extractEntry docs/assets/images/icons.png
+121 silly gunzTarPerm extractEntry docs/assets/images/icons@2x.png
+122 silly gunzTarPerm extractEntry docs/assets/images/widgets.png
+123 silly gunzTarPerm extractEntry docs/assets/images/widgets@2x.png
+124 silly gunzTarPerm extractEntry docs/assets/js/main.js
+125 silly gunzTarPerm extractEntry docs/assets/js/modernizr.js
+126 silly gunzTarPerm extractEntry docs/assets/js/search.js
+127 silly gunzTarPerm extractEntry docs/classes/_commonmodals_okonlymodal_.okonlycontent.html
+128 silly gunzTarPerm extractEntry docs/classes/_commonmodals_okonlymodal_.okonlymodal.html
+129 silly gunzTarPerm extractEntry docs/classes/_commonmodals_yesnomodal_.yesnomodal.html
+130 silly gunzTarPerm extractEntry docs/classes/_commonmodals_yesnomodal_.yesnomodalcontent.html
+131 silly gunzTarPerm extractEntry docs/classes/_components_bootstrapmodalcontainer_.bootstrapmodalcontainer.html
+132 silly gunzTarPerm extractEntry docs/classes/_components_modalbackdrop_.modalbackdrop.html
+133 silly gunzTarPerm extractEntry docs/classes/_models_icustommodal_.icustommodal.html
+134 silly gunzTarPerm extractEntry docs/classes/_models_modalconfig_.modalconfig.html
+135 silly gunzTarPerm extractEntry docs/classes/_models_modaldialoginstance_.modaldialoginstance.html
+136 silly gunzTarPerm extractEntry docs/classes/_providers_modal_.modal.html
+137 silly gunzTarPerm extractEntry docs/globals.html
+138 silly gunzTarPerm extractEntry docs/index.html
+139 silly gunzTarPerm extractEntry docs/interfaces/_models_icustommodal_.icustommodalcomponent.html
+140 silly gunzTarPerm extractEntry docs/modules/_commonmodals_okonlymodal_.html
+141 silly gunzTarPerm extractEntry docs/modules/_commonmodals_yesnomodal_.html
+142 silly gunzTarPerm extractEntry docs/modules/_components_bootstrapmodalcontainer_.html
+143 silly gunzTarPerm extractEntry docs/modules/_components_modalbackdrop_.html
+144 silly gunzTarPerm extractEntry docs/modules/_models_icustommodal_.html
+145 silly gunzTarPerm extractEntry docs/modules/_models_modalconfig_.html
+146 silly gunzTarPerm extractEntry docs/modules/_models_modaldialoginstance_.html
+147 silly gunzTarPerm extractEntry docs/modules/_providers_modal_.html
+148 silly gunzTarPerm extractEntry tsconfig.test.json
+149 silly gunzTarPerm extractEntry tslint.json
+150 silly gunzTarPerm extractEntry typedoc.json
+151 silly gunzTarPerm extractEntry typings.json
+152 verbose write writing to C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\angular2-modal\package.json
+153 info preinstall angular2-modal@0.0.4
+154 verbose readDependencies loading dependencies from C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\angular2-modal\package.json
+155 verbose readDependencies loading dependencies from C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\angular2-modal\package.json
+156 silly install resolved []
+157 verbose about to build C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\angular2-modal
+158 info build C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\angular2-modal
+159 info linkStuff angular2-modal@0.0.4
+160 silly linkStuff angular2-modal@0.0.4 has C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules as its parent node_modules
+161 verbose linkBins angular2-modal@0.0.4
+162 verbose linkMans angular2-modal@0.0.4
+163 verbose rebuildBundles angular2-modal@0.0.4
+164 info install angular2-modal@0.0.4
+165 info postinstall angular2-modal@0.0.4
+166 verbose unlock done using C:\Users\Nate\AppData\Roaming\npm-cache\_locks\angular2-modal-a0b300389e5da269.lock for C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\node_modules\angular2-modal
+167 verbose validateInstall loading C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject\package.json for validation
+168 verbose stack Error: The package reflect-metadata@0.1.3 does not satisfy its siblings' peerDependencies requirements!
+168 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:125:32
+168 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:268:7
+168 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:142:5
+168 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+168 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+168 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+168 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+168 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+168 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+168 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+169 verbose cwd C:\Users\Nate\Desktop\Aircraft Data\Code\PrivateAircraftProject
+170 error Windows_NT 10.0.10586
+171 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "angular2-modal" "--save"
+172 error node v4.3.2
+173 error npm  v2.14.12
+174 error code EPEERINVALID
+175 error peerinvalid The package reflect-metadata@0.1.3 does not satisfy its siblings' peerDependencies requirements!
+175 error peerinvalid Peer angular2@2.0.0-beta.8 wants reflect-metadata@0.1.2
+176 verbose exit [ 1, true ]

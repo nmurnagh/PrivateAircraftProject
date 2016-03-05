@@ -1,42 +1,130 @@
-        <div class="container-fluid custom-modal-container">
-            <div class="row custom-modal-header">
-                <div class="col-sm-12">
-                    <h1>A Custom modal design</h1>
-                </div>
-            </div>
-            <div class="row" [ngClass]="{'myclass' : shouldUseMyClass}">
-                <div class="col-xs-12">
-                    <div>{{context.data.FULL_NAME}}</div>
-                    <div>{{context.data.REGISTRATION_SUB_TYPE_E}}</div> 
-                    <div>{{context.data.COMMON_NAME}}</div> 
-                    <div>{{context.data.MODEL_NAME}}</div> 
-                    <div>{{context.data.MANUFACTURERS_SERIAL_NUMBER}}</div> 
-                    <div>{{context.data.ID_PLATE_MANUFACTURERS_NAME}}</div>
-                    <div>{{context.data.BASIS_FOR_REGISTRATION}}</div> 
-                    <div>{{context.data.AIRCRAFT_CATEGORY_E}}</div> 
-                    <div>{{context.data.DATE_OF_IMPORT}}</div> 
-                    <div>{{context.data.ENGINE_MANUF_E}}</div> 
-                    <div>{{context.data.POWERGLIDER_FLAG}}</div> 
-                    <div>{{context.data.ENGINE_CATEGORY_E}}</div> 
-                    <div>{{context.data.NUMBER_OF_ENGINES}}</div> 
-                    <div>{{context.data.NUMBER_OF_SEATS}}</div> 
-                    <div>{{context.data.AIR_WEIGHT_KILOS}}</div> 
-                    <div>{{context.data.ISSUE_DATE}}</div>
-                    <div>{{context.data.EFFECTIVE_DATE}}</div> 
-                    <div>{{context.data.INEFFECTIVE_DATE}}</div> 
-                    <div>{{context.data.REGISTERED_PURPOSE_E}}</div> 
-                    <div>{{context.data.FLIGHT_AUTHORITY_E}}</div> 
-                    <div>{{context.data.MANUFACTURE_OR_ASSEMBLY}}</div> 
-                    <div>{{context.data.COUNTRY_MANUFACTURE_ASS_E}}</div> 
-                    <div>{{context.data.BASE_OF_OPERATIONS_CTRY_E}}</div>
-                    <div>{{context.data.BASE_PROVINCE_OR_STATE_E}}</div>
-                    <div>{{context.data.CITY_AIRPORT}}</div>
-                    <div>{{context.data.REGISTRATION_AUTH_STATUS_E}}</div>
-                    <div>{{context.data.MODIFIED_DATE}}</div>
-                    <div>{{context.data.MODE_S_TRANSPONDER_BINARY}}</div> 
-                    <div>{{context.data.PHYSICAL_FILE_REGION_E}}</div> 
-                    <div>{{context.data.EX_MILITARY_MARK}}</div>        
-                </div>
-            </div>
-             <button class="btn btn-default" type="button" (click)="close()" >Close</button>
+<div class="container-fluid custom-modal-container">
+    <div class="row custom-modal-header">
+        <div class="col-sm-12">
+            <h1>A Custom modal design</h1>
         </div>
+    </div>
+    <div class="row" [ngClass]="{'myclass' : shouldUseMyClass}">
+        <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <td>Owner Name</td>
+                    <td>{{context.data.FULL_NAME}}</td>
+                </tr>
+                <tr>
+                    <td>Activity Sub-type</td>
+                    <td>{{context.data.REGISTRATION_SUB_TYPE_E}}</td>
+                </tr>
+                <tr>
+                    <td>Common Name</td>
+                    <td>{{context.data.COMMON_NAME}}</td>
+                </tr>
+                <tr>
+                    <td>Model Name</td>
+                    <td>{{context.data.MODEL_NAME}}</td>
+                </tr>
+                <tr>
+                    <td>Serial Number</td>
+                    <td>{{context.data.MANUFACTURERS_SERIAL_NUMBER}}</td>
+                </tr>
+                <tr>
+                    <td>Manufacturer on ID Plate</td>
+                    <td>{{context.data.ID_PLATE_MANUFACTURERS_NAME}}</td>
+                </tr>
+                <tr>
+                    <td>Basis for Eligibility for Registration</td>
+                    <td>{{context.data.BASIS_FOR_REGISTRATION}}</td>
+                </tr>
+                <tr>
+                    <td>Aircraft Category</td>
+                    <td>{{context.data.AIRCRAFT_CATEGORY_E}}</td>
+                </tr>
+                <tr>
+                    <td>Date of Import</td>
+                    <td>{{context.data.DATE_OF_IMPORT}}</td>
+                </tr>
+                <tr>
+                    <td>Engine Manufacturer</td>
+                    <td>{{context.data.ENGINE_MANUF_E}}</td>
+                </tr>
+                <tr>
+                    <td>Powerglider</td>
+                    <td>{{context.data.POWERGLIDER_FLAG}}</td>
+                </tr>
+                <tr>
+                    <td>Engine Category</td>
+                    <td>{{context.data.ENGINE_CATEGORY_E}}</td>
+                </tr>
+                <tr>
+                    <td>Number of Engines</td>
+                    <td>{{context.data.NUMBER_OF_ENGINES}}</td>
+                </tr>
+                <tr>
+                    <td>Number of Seats</td>
+                    <td>{{context.data.NUMBER_OF_SEATS}}</td>
+                </tr>
+                <tr>
+                    <td>Launch or Takeoff Weight in Kilos</td>
+                    <td>{{context.data.AIR_WEIGHT_KILOS}}</td>
+                </tr>
+                <tr>
+                    <td>Certificate Issue Date</td>
+                    <td>{{context.data.ISSUE_DATE}}</td>
+                </tr>
+                <tr>
+                    <td>Date the Registration became effective</td>
+                    <td>{{context.data.EFFECTIVE_DATE}}</td>
+                </tr>
+                <tr>
+                    <td>Date the Registration expires</td>
+                    <td>{{context.data.INEFFECTIVE_DATE}}</td>
+                </tr>
+                <tr>
+                    <td>Purpose of Registration</td>
+                    <td>{{context.data.REGISTERED_PURPOSE_E}}</td>
+                </tr>
+                <tr>
+                    <td>Flight Authority</td>
+                    <td>{{context.data.FLIGHT_AUTHORITY_E}}</td>
+                </tr>
+                <tr>
+                    <td>Manufactured or Assesmbled</td>
+                    <td>{{context.data.MANUFACTURE_OR_ASSEMBLY}}</td>
+                </tr>
+                <tr>
+                    <td>Country of Manufacture or Assembly</td>
+                    <td>{{context.data.COUNTRY_MANUFACTURE_ASS_E}}</td>
+                </tr>
+                <tr>
+                    <td>Base of Operations Country</td>
+                    <td>{{context.data.BASE_OF_OPERATIONS_CTRY_E}}</td>
+                </tr>
+                <tr>
+                    <td>Base of Operations Province or State</td>
+                    <td>{{context.data.BASE_PROVINCE_OR_STATE_E}}</td>
+                </tr>
+                <tr>
+                    <td>Base Location</td>
+                    <td>{{context.data.CITY_AIRPORT}}</td>
+                </tr>
+                <tr>
+                    <td>Registration Status</td>
+                    <td>{{context.data.REGISTRATION_AUTH_STATUS_E}}</td>
+                </tr>
+                <tr>
+                    <td>Date this record was last modified</td>
+                    <td>{{context.data.MODIFIED_DATE}}</td>
+                </tr>
+                <tr>
+                    <td>Mode S Transponder, Binary</td>
+                    <td>{{context.data.MODE_S_TRANSPONDER_BINARY}}</td>
+                </tr>
+                <tr>
+                    <td>Former Military Mark Displayed</td>
+                    <td>{{context.data.EX_MILITARY_MARK}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <button class="btn btn-default" type="button" (click)="close()">Close</button>
+</div>
